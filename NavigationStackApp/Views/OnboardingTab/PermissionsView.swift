@@ -13,7 +13,7 @@ struct PermissionsView: View {
             Text("We need a few permissions to continue.")
                 .foregroundStyle(.secondary)
             Button("Grant Permissions") {
-                coordinator.advance()
+                coordinator.advance(from: .permissions)
             }
             .buttonStyle(.borderedProminent)
         }

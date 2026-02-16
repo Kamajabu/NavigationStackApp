@@ -13,7 +13,7 @@ struct PreferencesView: View {
             Text("Customize your experience.")
                 .foregroundStyle(.secondary)
             Button("Finish Setup") {
-                coordinator.advance()
+                coordinator.advance(from: .preferences)
             }
             .buttonStyle(.borderedProminent)
         }

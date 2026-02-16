@@ -13,7 +13,7 @@ struct WelcomeView: View {
             Text("Let's get you set up.")
                 .foregroundStyle(.secondary)
             Button("Get Started") {
-                coordinator.advance()
+                coordinator.advance(from: .welcome)
             }
             .buttonStyle(.borderedProminent)
         }

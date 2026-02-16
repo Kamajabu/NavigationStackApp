@@ -13,10 +13,8 @@ class OnboardingCoordinator {
     }
 
     // Move to the next room in the tour
-    func advance() {
-        switch path.last {
-        case .none:
-            path.append(.welcome)
+    func advance(from current: Step) {
+        switch current {
         case .welcome:
             path.append(.permissions)
         case .permissions:
